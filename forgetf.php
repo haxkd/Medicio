@@ -22,7 +22,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
             $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'haxkdmail@gmail.com';                 // SMTP username
-            $mail->Password = 'Abul@123';                           // SMTP password
+            $mail->Password = 'PASSWORD';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
             $mail->setFrom('haxkdmail@gmail.com', 'USER');
