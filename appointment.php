@@ -7,7 +7,6 @@ if(isset($_SESSION['email'])){
 }else{
     header('location: login.php');
 }
-
 $q = "SELECT * FROM user WHERE email='$email'";
 $x = mysqli_query($conn,$q);
 $row = mysqli_fetch_assoc($x);
@@ -27,17 +26,13 @@ $phone = $row['phone'];
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
-
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Make an Appointment</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
         <form action="appointments.php" method="post" role="form" data-aos="fade-up" data-aos-delay="100">
           <div class="form-row">
             <div class="col-md-4 form-group">
@@ -71,20 +66,14 @@ $phone = $row['phone'];
               <div class="validate"></div>
             </div>
           </div>
-
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
             <div class="validate"></div>
           </div>
-          
           <div class="text-center"><button type="submit" class="appointment-btn" name="appointment">Make an Appointment</button></div>
         </form>
-
       </div>
     </section><!-- End Appointment Section -->
-
-
-
 </main>
 <?php
 include_once 'footer.php';
