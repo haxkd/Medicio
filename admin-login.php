@@ -1,11 +1,9 @@
 <?php
 include_once 'header.php';
 session_start();
-
 if(isset($_SESSION['admin'])){
   header('location: profile.php');
 }
-
 ?>
 <main id="main">
 <!-- ======= Breadcrumbs Section ======= -->
@@ -13,7 +11,6 @@ if(isset($_SESSION['admin'])){
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <h2>Admin Login Page</h2>
-      
       <ol>
         <li><a href="index.php">Home</a></li>
         <li>Admin Login Page</li>
@@ -21,7 +18,6 @@ if(isset($_SESSION['admin'])){
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
     <!-- ======= LOGIN Section ======= -->
     <section id="appointment" class="appointment section-bg">
 <?php
@@ -49,12 +45,9 @@ unset($_SESSION['msg']);
             </div>
           </div>
           <div class="text-center"><button type="submit" class="appointment-btn" name="adminlogin">LOGIN</button></div>
-
-          
         </form>
-        
       </div>
-                  <div class="col-md-3"></div>
+               <div class="col-md-3"></div>
               </div>
       </div>
     </section><!-- End LOGIN Section -->
