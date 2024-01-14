@@ -58,7 +58,6 @@ else if(isset($_POST['changepassword'])){
         $_SESSION['msg'] = 'PASSWORD UPDATED SUCCESSFULLY';
         header('location: login.php');
         exit();
-        
     }else{
         $_SESSION['msg'] = 'PASSWORD UPDATE FAILED';
         header('location: login.php');
