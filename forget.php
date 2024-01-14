@@ -1,11 +1,9 @@
 <?php
 include_once 'header.php';
 session_start();
-
 if(isset($_SESSION['email'])){
   header('location: profile.php');
 }
-
 ?>
 <main id="main">
 <!-- ======= Breadcrumbs Section ======= -->
@@ -13,7 +11,6 @@ if(isset($_SESSION['email'])){
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <h2>Forget Password Page</h2>
-      
       <ol>
         <li><a href="index.php">Home</a></li>
         <li>Forget Password Page</li>
@@ -21,7 +18,6 @@ if(isset($_SESSION['email'])){
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
     <!-- ======= LOGIN Section ======= -->
     <section id="appointment" class="appointment section-bg">
 <?php
@@ -42,16 +38,12 @@ unset($_SESSION['msg']);
             <div class="col-md-12 form-group">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
               <div class="validate"></div>
-            </div>
-            
+            </div>            
           </div>
           <div class="text-center"><button type="submit" class="appointment-btn" name="login">FORGET PASSWORD</button></div>
-
           <br><br>  <div class="text-center">Allready Have an account? 
             <a href="login.php" class="appointment-btn scrollto">LOG IN</a></div>
-            
         </form>
-        
       </div>
                   <div class="col-md-3"></div>
               </div>
