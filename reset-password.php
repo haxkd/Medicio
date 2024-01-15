@@ -15,10 +15,7 @@ include_once 'conn.php';
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
-
 <?php
-
 if(isset($_GET['key']) && isset($_GET['email']) && !empty($_GET['key']) && !empty($_GET['email'])){
     $key = $_GET['key'];
     $email = $_GET['email'];
@@ -32,7 +29,6 @@ if(isset($_GET['key']) && isset($_GET['email']) && !empty($_GET['key']) && !empt
     }
     else{
         ?>
-
 <section id="appointment" class="appointment section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -49,49 +45,19 @@ if(isset($_GET['key']) && isset($_GET['email']) && !empty($_GET['key']) && !empt
             <div class="validate"></div>
             </div>
           </div>
-          <div class="text-center"><button type="submit" class="appointment-btn" name="changepassword">CHANGE PASSWORD</button></div>
-
-        
-            
+          <div class="text-center"><button type="submit" class="appointment-btn" name="changepassword">CHANGE PASSWORD</button></div>            
         </form>
-        
       </div>
                   <div class="col-md-3"></div>
               </div>
       </div>
     </section>
-
-
-
 <?php
     }
-
-
 }else{
     echo 'something went wrong';
 }
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </main>
 <?php
 include 'footer.php';
