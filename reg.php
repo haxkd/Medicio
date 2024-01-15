@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once 'conn.php';
-
 if(isset($_POST['signup'])){
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -35,7 +34,6 @@ if(mysqli_num_rows($x)>0){
         $_SESSION['msg']='PASSWORD IS WRONG';
         header('location: login.php');
     }
-    
 }else
 {
     $_SESSION['msg']='EMAIL NOT FOUND';
@@ -57,18 +55,12 @@ else if(isset($_POST['adminlogin'])){
             $_SESSION['msg']='PASSWORD IS WRONG';
             header('location: admin-login.php');
         }
-        
     }else
     {
         $_SESSION['msg']='ADMIN NOT FOUND';
         header('location: admin-login.php');
     }
     }
-
-
-
-
-
 
 
 else{
