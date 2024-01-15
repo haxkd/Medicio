@@ -2,7 +2,6 @@
 session_start();
 include_once 'header.php';
 include_once 'conn.php';
-
 if(isset($_SESSION['email'])){
     $email = $_SESSION['email'];
 }else{
@@ -23,9 +22,7 @@ if(isset($_SESSION['email'])){
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
 <?php
-
 $q = "SELECT * FROM user WHERE email='$email'";
 $x = mysqli_query($conn,$q);
 $row = mysqli_fetch_assoc($x);
@@ -39,7 +36,6 @@ echo "<h3 style='color:red;text-align:center;'>$_SESSION[msg] </h3>";
 unset($_SESSION['msg']);
 }
 ?>
-
     <!-- ======= PROFILE Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container" data-aos="fade-up">
@@ -65,7 +61,6 @@ unset($_SESSION['msg']);
                         </div>
                         <div class="col-sm-9 text-secondary">
                         <?php echo $email; ?>
-
                         </div>
                     </div>
                     <hr>
@@ -75,11 +70,9 @@ unset($_SESSION['msg']);
                         </div>
                         <div class="col-sm-9 text-secondary">
                         <?php echo $phone; ?>
-
                         </div>
                     </div>
                     <hr>
-
                   <?php
                   if(!empty($msg)){
                     echo "<div class='row'>
@@ -94,14 +87,11 @@ unset($_SESSION['msg']);
                   ?>
                     </div>
                 </div>
-            </div>
-        
+            </div>        
             <div class="col-md-4" style="margin-top: 90px;margin-left: 90px;"><h4>YOUR APPOINTMENTS</h4><a href="appointment.php" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a></div>
         </div>
     </div>
-
     </section><!-- End LOGIN Section -->
-
 <?php
 include_once 'footer.php';
 ?>
