@@ -14,14 +14,11 @@ include_once 'header.php';
     </div>
   </div>
 </section><!-- End Breadcrumbs Section -->
-
     <!-- ======= LOGIN Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>-: SIGN UP :-</h2>
-          
         </div>
         <div class="row">
                   <div class="col-md-3"></div>
@@ -44,23 +41,14 @@ include_once 'header.php';
               <div class="validate"></div>
             </div>
           </div>
-          
           <div class="text-center">
           <input type="submit" class="appointment-btn scrollto" name="signup" value="SIGNUP">
           </div>
         </form></div>
-
                   <div class="col-md-3"></div>
-
               </div>
-        
-
       </div>
     </section><!-- End LOGIN Section -->
-
-
-
-
 </main>
 <?php
 include_once 'footer.php';
