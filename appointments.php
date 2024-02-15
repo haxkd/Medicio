@@ -16,7 +16,8 @@ if(isset($_POST['appointment'])){
         $_SESSION['msg'] = 'APPOINTMENT IS ALREADY BOOKED';
         header('location: profile.php');
     }
-}else{
+}
+else{
     echo 'GET OUT................';
 }
 ?>
